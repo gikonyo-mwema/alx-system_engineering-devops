@@ -1,0 +1,1 @@
+Getting to understand shell
