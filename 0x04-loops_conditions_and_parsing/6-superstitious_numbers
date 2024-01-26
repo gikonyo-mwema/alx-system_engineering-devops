@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
 # Script displays numbers from 1 to 20 and custom phrases for 4, 9 and 17
 
-# Declare an associative array for the messages
-declare -A messages
-messages[4]="Bad luck from China"
-messages[9]="Bad luck from Japan"
-messages[17]="Bad luck form Italy"
-
-# Initialize counter
+# Initialize coutner
 counter=1
 
 # Start the while loop
@@ -16,10 +10,18 @@ do
     # Display the counter
     echo $counter
 
-    # Check if there's a message for this counter value and display it
-    if [[ ${messages[$counter]} ]]; then
-        echo ${messages[$counter]}
-    fi 
+    # Use a case statement
+    case $counter in
+        4)
+            echo "Bad luck from China"
+            ;;
+        9)
+            echo "Bad luck from Japan"
+            ;;
+        17)
+            echo "Bad luck from Italy"
+            ;;
+    esac
 
     # Increment the counter
     ((counter++))
