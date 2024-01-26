@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#Loop that print a phrase 10 times using until
+
+#Initialize couter
+counter=1
+
+# Use an until loop to print the phrase 10 times
+until ((counter > 10))
+do
+    echo "Best School"
+    ((counter++))
+done
