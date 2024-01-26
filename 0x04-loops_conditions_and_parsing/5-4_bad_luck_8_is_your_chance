@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# While loop the outputs different phrases on the 4 and 8 loop, rest are same
+
+#Initialize coutner
+counter=1
+
+# Use a while loop to iterate from 1 to 10
+while ((counter <= 10))
+do
+    # If this is the 4 iteration, display
+    if ((counter == 4))
+    then
+        echo "bad luck"
+
+    # If this is the 8th iteration, display "good luck"
+    elif ((counter == 8))
+    then
+        echo "good luck"
+    # For other iterations, display "Best School"
+    else
+        echo "Best School"
+    fi
+
+    # Increment the counter
+    ((counter++))
+done
