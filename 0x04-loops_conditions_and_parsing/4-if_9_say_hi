@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Using an if in a loop
+
+# Define the phrase
+phrase="Best School"
+
+# Intialize counter
+counter=1
+
+# Use a while loop to print the phrase 10 times
+while ((counter <= 10))
+do
+    # Print the phrase
+    echo "$phrase"
+
+    # If this is the 9th iteration, print Hi on a new line
+    if ((counter == 9))
+    then
+        echo "Hi"
+    fi
+
+    # Increment the counter
+    ((counter++))
+done
