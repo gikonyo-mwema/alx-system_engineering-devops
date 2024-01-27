@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script that kills invicible 
+
+kill -SIGKILL "$(pgrep --full 7-highlander)"
