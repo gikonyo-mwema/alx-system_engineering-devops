@@ -1,9 +1,5 @@
-#!/usr/bin/bash
-# Get the PID of the process
-PID=$(pgrep  4-to_infinity_and_beyond)
+#!/usr/bin/env bash
+# script that kill the process.
+# shellcheck disable=SC2009
 
-# Use kill to stop the process if it exists
-if [ -n "$PID" ]
-then
-    pkill -TERM -P "$PID"
-fi
+pkill -f "4-to_infinity_and_beyond"
