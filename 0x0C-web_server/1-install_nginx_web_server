@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Installs Nginx
 
 # update the package list
 sudo apt-get update
@@ -16,4 +17,4 @@ echo "server {
 }" | sudo tee /etc/nginx/sites-available/default
 
 # Reload nginx to apply the changes
-sudo service nginx reload
+sudo service nginx start
