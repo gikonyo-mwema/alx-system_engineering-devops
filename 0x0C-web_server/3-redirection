@@ -15,7 +15,7 @@ printf "server {
 	    add_header Content-Type text/plain;
 	}
 	location = /redirect_me {
-	    return 301 http://gikonyomwema.tech/new_page;
+	    return 301 http://gikonyomwema.tech;
 	}
 }" | sudo tee /etc/nginx/sites-available/default
 
