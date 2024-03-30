@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Installs Nginx, configures redirection, and sets a custom 404 page
+
+# Update the package list
+sudo apt-get update
+
+# Install nginx
+sudo apt-get install -y nginx
+
+# Create a custom 404 page
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/custom_404.html
+
+# Create a new nginx configuration file
+printf "server {
+	listen 80;
+	location / {
+		return 200 'Hello World!\\n';
+		add_header Content-Type text/plain;
+	}
+	location = /redirect_me {
+		return 301 http://gikonyomwema.tech;
+	}
+	error_page 404 /custom_404.html;
+	location = /custom_404.html {
+		root /usr/share/nginx/html;
+		internal;
+	}
+}" | sudo tee /etc/nginx/sites-available/default
+
+# Reload nginx to apply the changes
+sudo service nginx restart
