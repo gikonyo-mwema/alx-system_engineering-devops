@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Docker container with the given image ‘holbertonschool/265-0
 #docker run -p 8080:80 -d -it holbertonschool/265-0
 
@@ -14,10 +15,10 @@
 #apt-get install -y apache2
 
 # Start service
-sudo service apache2 start
+service apache2 start
 
 # Create a HTML file that Apache serve
-sudo echo 'Hello Holberton' | /var/www/html/index.html
+echo 'Hello Holberton' | /var/www/html/index.html
 
 # Exit the container
 #exit
