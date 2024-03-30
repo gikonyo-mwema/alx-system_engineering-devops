@@ -1,0 +1,28 @@
+# Docker container with the given image ‘holbertonschool/265-0
+docker run -p 8080:80 -d -it holbertonschool/265-0
+
+# Check if it runs
+docker ps
+
+# Connect to the running container
+docker exec -ti f7e8e56b4463 /bin/bash
+
+# Update package list
+apt-get update
+
+# Install Apache
+apt-get install -y apache2
+
+# Start service
+service apache2 start
+
+# Create a HTML file that Apache serve
+echo 'Hello Holberton' > /var/www/html/index.html
+
+# Exit the container
+exit
+
+# Check the working
+curl localhost:8080
+
+
