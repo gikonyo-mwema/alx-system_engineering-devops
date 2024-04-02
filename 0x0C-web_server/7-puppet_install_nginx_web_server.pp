@@ -1,19 +1,21 @@
-class nginx_setup {
-	package { 'nginx':
-	  ensure => installed,
-	}
+# manifest to install and configure nginx
 
-	service { 'nginx':
-	  ensure  => running,
-	  enable  => true,
-	  require => Package['nginx'],
-	}
-
-	file { '/var/www/html/index.html':
-	  ensure   => file,
-	  content  => template('nginx/default.erb'),
-	  notify   => Service['nginx'],
-	  require  => Package['nginx'],
-	}
+package { 'nginx':
+  ensure => installed,
 }
-include nginx_setup
+
+file_line { 'install':
+  ensure => 'present',
+  path   => '/etc/nginx/sites-enabled/default',
+  after  => 'listen 80 default_server;',
+  line   => 'rewrite ^/redirect_me https:/www.github.com/gikonyo-mwema permanent;',
+}
+
+file { '/var/www/html/index.html':
+  content => 'Hello World!',
+}
+
+service { 'nginx':
+  ensure  => running,
+  require => Package['nginx'],
+}
