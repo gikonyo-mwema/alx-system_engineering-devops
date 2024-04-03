@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Customizing web server 
+
+# Updating Packages
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# Create index.html page
+echo "Hello world!" | sudo tee /var/www/html/index.html
+
+# Moved permanently redirection (301)
+replacement_str="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/gikonyo-mwema permanent;"
+
+sudo sed -i "s/server_name _;/$replacement_str/" /etc/nginx/sites-enabled/default
+
+# Creating a 404 error page
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+
+replacement_str="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+
+sudo sed -i "s/listen 80 default_server;/$replacement_str/" /etc/nginx/sites-enabled/default
+
+# Test configuration for errors
+sudo nginx -t
+
+# Restart nginx after implementing changes
+sudo service nginx restart
