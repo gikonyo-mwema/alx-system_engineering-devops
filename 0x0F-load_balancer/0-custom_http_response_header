@@ -20,6 +20,9 @@ replacement_str="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tloca
 
 sudo sed -i "s/listen 80 default_server;/$replacement_str/" /etc/nginx/sites-enabled/default
 
+# Creating an HTTP response header
+sudo sed -i "/server_name _/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-enabled/default
+
 # Test configuration for errors
 sudo nginx -t
 
