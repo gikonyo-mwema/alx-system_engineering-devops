@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# This script configures a new Ubuntu machine with HAProxy and SSL
+
+# Update and install necessary software
+sudo apt-get update
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository universe -y
+sudo add-apt-repository ppa:certbot/certbot -y
+sudo apt-get update
+
+# Install Certbot and HAProxy
+sudo apt-get install -y certbot haproxy
+
+# Stop the HAProxy service to free up port 80 for Certbot
+sudo systemctl stop haproxy
+
+# Request a new certificate for your domain
+sudo certbot certonly --standalone --preferred-challenges http -d www.gikonyomwema.tech
+
+# Start the HAProxy service again
+sudo systemctl start haproxy
+
+# Create the directory for the combined certificate and key if it doesn't exist
+sudo mkdir -p /etc/haproxy/certs/
+
+# Combine the private key and certificate into one file (required by HAProxy)
+sudo bash -c 'cat /etc/letsencrypt/live/www.gikonyomwema.tech/privkey.pem /etc/letsencrypt/live/www.gikonyomwema.tech/fullchain.pem > /etc/haproxy/certs/www.gikonyomwema.tech.pem'
+
+# Set up HAProxy to use the SSL certificate and listen on port 443
+echo "
+frontend www-ssl
+    bind *:443 ssl crt /etc/haproxy/certs/www.gikonyomwema.tech.pem
+    default_backend www-backend
+
+backend www-backend
+    balance roundrobin
+    server web1 54.157.151.166:80 check
+    server web2 18.210.33.196:80 check
+" | sudo tee /etc/haproxy/haproxy.cfg
+
+# Restart HAProxy to apply the changes
+sudo systemctl restart haproxy
+
