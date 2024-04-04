@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Display information about subdomains
+
+# Check if domain is provided
+if [ -z "$1" ]; then
+	echo "Please provide a domain."
+	exit 1
+fi
+
+# Array of subdomains
+subdomains=("www" "lb-01" "web-01" "web-02")
+
+# Get record info
+get_record_info() {
+	local domain=$1
+	local subdomain=$2
+	local record_info=$(dig $subdomain.$domain +short -t A)
+
+	echo "The subdomain $subdomain is a A record and points to $record_info"
+}
+
+# If subdomain is provided
+if [ -n "$2" ]; then
+	get_record_info $1 $2
+else
+	# Loop throught each subdomain
+	for subdomain in "${subdomains[@]}"; do
+		get_record_info $1 $subdomain
+	done
+fi
