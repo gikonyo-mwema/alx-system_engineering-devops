@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Load Balancer credentials
+
+# Setting up SSH-Agent
+eval $("ssh-agent")
+
+Path to KEY
+ssh-add ~/.ssh/school
+
+# Username and IP address
+ssh ubuntu@100.25.192.118
