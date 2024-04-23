@@ -5,6 +5,7 @@ It accepts an employee ID as a command-line argument and exports the
 employee's TODO list progress in a specific CSV format.
 """
 
+import csv
 import requests
 import sys
 
@@ -25,12 +26,12 @@ if __name__ == "__main__":
     username = [user['username'] for user in users
                 if user['id'] == employee_id][0]
 
-    # build the csv
-    builder = ""
-    for todo in todos:
-        if todo['userId'] == employee_id:
-            builder += '"{}","{}","{}","{}"\n'.format(
-                employee_id, username, todo['completed'], todo['title'])
+    with open('{}.csv'.format(employee_id), 'w', newline='') as file:
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
+        writer.writerow(["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS",
+                         "TASK_TITLE"])
 
-    with open('{}.csv'.format(employee_id), 'w', encoding='UTF8') as myFile:
-        myFile.write(builder)
+        for todo in todos:
+            if todo['userId'] == employee_id:
+                writer.writerow([employee_id, username,
+                                 todo['completed'], todo['title']])
