@@ -22,12 +22,12 @@ def get_employee_todo_list(employee_id):
     todos = requests.get(todos_url).json()
 
     with open('{}.csv'.format(employee_id), 'w', newline='') as file:
-        writer = csv.writer(file)
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         writer.writerow(["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS",
                          "TASK_TITLE"])
 
         for task in todos:
-            writer.writerow([employee_id, user.get('name'),
+            writer.writerow([employee_id, user.get('username'),
                              task.get('completed'), task.get('title')])
 
 
