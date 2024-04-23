@@ -16,7 +16,7 @@ def get_employee_todo_list(employee_id):
     """
     base_url = "https://jsonplaceholder.typicode.com/users/"
     user_url = "{}{}".format(base_url, employee_id)
-    todos_url = "{}/{}/todos".format(base_url, employee_id)
+    todos_url = "{}todos?userId={}".format(base_url, employee_id)
 
     user = requests.get(user_url).json()
     todos = requests.get(todos_url).json()
