@@ -1,4 +1,4 @@
-# Lost Access to Web servers and Load Balances.
+# **Lost Access to Web servers and Load Balances.**
 
 ![Alt Text](https://media0.giphy.com/media/WqDRe5JBggRva/200.gif?cid=790b7611fwz5f56x5lzmvzwiw00o111v972k08u6z1xl92a3&ep=v1_gifs_search&rid=200.gif&ct=g)
 
@@ -24,7 +24,7 @@ On May 4th, I Lost access to  my web servers and load balancer. All services tha
 * 9:10 AM: Request new web servers from ALX
 * 9:30 AM: New web servers assigned configuration begins
 * 12:00 PM: Successful configuration of both web servers and load balancer
-* 1:00 PM: New fully functional system running!
+* 1:00 PM: *New fully functional system running!*
 * 2:00 PM: Backup of important files 
 * 3:00 PM: Back to course work and tasks
 
