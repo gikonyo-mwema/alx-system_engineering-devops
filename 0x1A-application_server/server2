@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# List of servers
+servers=("34.229.72.166")
+
+# Loop through servers and connect
+for server in ${servers[@]}
+do
+  ssh -i ~/.ssh/school ubuntu@$server
+done
+
