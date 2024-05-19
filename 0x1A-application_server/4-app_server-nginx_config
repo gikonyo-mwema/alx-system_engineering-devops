@@ -12,19 +12,19 @@ server {
     add_header  X-Served-By 271621-web-01;
 
     # Serve /airbnb-onepage/ route from AirBnB_clone_v2
-    location /airbnb-onepage/ {
-        proxy_pass http://localhost:5001/airbnb-onepage/;
-    }
+    #location /airbnb-onepage/ {
+    #    proxy_pass http://localhost:5000;
+    #}
 
     # Serve /number_odd_or_even/ route on AirBnB_clone_v2
-    location /airbnb-dynamic/number_odd_or_even/ {
-        rewrite ^/airbnb-dynamic/number_odd_or_even/(.*)$ /number_odd_or_even/$1 break;
-        proxy_pass http://localhost:5001;
-    }
+    #location /airbnb-dynamic/number_odd_or_even/ {
+    #   rewrite ^/airbnb-dynamic/number_odd_or_even/(.*)$ /number_odd_or_even/$1 break;
+    #   proxy_pass http://localhost:5001;
+    #}
 
     # Serve API on AirBnB_clone_v3
     location /api/ {
-        proxy_pass http://localhost:5002/api;
+        proxy_pass http://localhost:5002;
     }
 
     # 404 error page
