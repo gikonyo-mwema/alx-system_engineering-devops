@@ -7,6 +7,8 @@ README links to all of the task files and supporting resources in that folder.
 
 ## Project index
 
+The project links use short labels to keep the index readable.
+
 | Project | What you will find | Project README and task examples |
 |---|---|---|
 | [0x00-shell_basics/](./0x00-shell_basics/) | Navigating the filesystem, listing files, paths, file types, and links. | [README](./0x00-shell_basics/README.md) · [working directory](./0x00-shell_basics/0-current_working_directory) · [symbolic link](./0x00-shell_basics/13-symbolic_link) |
@@ -26,7 +28,7 @@ README links to all of the task files and supporting resources in that folder.
 | [0x0E-web_stack_debugging_1/](./0x0E-web_stack_debugging_1/) | Debugging Nginx configuration and service behavior. | [README](./0x0E-web_stack_debugging_1/README.md) · [Nginx on port 80](./0x0E-web_stack_debugging_1/0-nginx_likes_port_80) |
 | [0x0F-load_balancer/](./0x0F-load_balancer/) | Load balancer setup and custom HTTP response headers. | [README](./0x0F-load_balancer/README.md) · [install load balancer](./0x0F-load_balancer/1-install_load_balancer) · [custom header](./0x0F-load_balancer/0-custom_http_response_header) |
 | [0x10-https_ssl/](./0x10-https_ssl/) | DNS, HTTPS/SSL termination, and HTTP-to-HTTPS redirects. | [README](./0x10-https_ssl/README.md) · [world wide web](./0x10-https_ssl/0-world_wide_web) · [SSL termination](./0x10-https_ssl/1-haproxy_ssl_termination) |
-| [0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/) | A browser request lifecycle, technical writing, and diagram/contribution work. | [README](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/README.md) · [blog post](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/0-blog_post) |
+| [0x11](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/) | A browser request lifecycle, technical writing, and diagram/contribution work. | [README](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/README.md) · [blog post](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/0-blog_post) |
 | [0x12-web_stack_debugging_2/](./0x12-web_stack_debugging_2/) | Linux user context and running Nginx under the intended account. | [README](./0x12-web_stack_debugging_2/README.md) · [run as another user](./0x12-web_stack_debugging_2/0-iamsomeoneelse) · [run Nginx as nginx](./0x12-web_stack_debugging_2/1-run_nginx_as_nginx) |
 | [0x13-firewall/](./0x13-firewall/) | Firewall rules and port forwarding. | [README](./0x13-firewall/README.md) · [firewall rules](./0x13-firewall/0-block_all_incoming_traffic_but) · [port forwarding](./0x13-firewall/100-port_forwarding) |
 | [0x14-mysql/](./0x14-mysql/) | MySQL primary/replica configuration and database backups. | [README](./0x14-mysql/README.md) · [primary configuration](./0x14-mysql/4-mysql_configuration_primary) · [backup](./0x14-mysql/5-mysql_backup) |
