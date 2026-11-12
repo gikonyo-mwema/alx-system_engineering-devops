@@ -45,3 +45,15 @@ Your Bash script must pass Shellcheck (version 0.3.7-5~ubuntu16.04.1 via apt-get
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 
 The second line of all your Bash scripts should be a comment explaining what is the script doing
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [1](./1) — Task/resource: Task 1.
+- [4-mysql_configuration_primary](./4-mysql_configuration_primary) — Task/resource: Mysql configuration primary.
+- [4-mysql_configuration_replica](./4-mysql_configuration_replica) — Task/resource: Mysql configuration replica.
+- [5-mysql_backup](./5-mysql_backup) — Task/resource: Mysql backup.
+- [lb](./lb) — Supporting host or infrastructure file (Lb).
+- [web1](./web1) — Supporting host or infrastructure file (Web1).
+- [web2](./web2) — Supporting host or infrastructure file (Web2).

@@ -34,3 +34,14 @@ Your Bash script must pass Shellcheck (version 0.3.7) without any error
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 
 The second line of all your Bash scripts should be a comment explaining what is the script doing
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-world_wide_web](./0-world_wide_web) — Task/resource: World wide web.
+- [1-haproxy_ssl_termination](./1-haproxy_ssl_termination) — Task/resource: Haproxy ssl termination.
+- [100-redirect_http_to_https](./100-redirect_http_to_https) — Task/resource: Redirect http to https.
+- [ld_01](./ld_01) — Supporting host or infrastructure file (Ld 01).
+- [web_01](./web_01) — Supporting host or infrastructure file (Web 01).
+- [web_02](./web_02) — Supporting host or infrastructure file (Web 02).

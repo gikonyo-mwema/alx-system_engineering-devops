@@ -44,3 +44,14 @@ All your Bash script files must be executable
 Your Bash script must pass shellcheck without any error
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 The second line of all your Bash scripts should be a comment explaining what is the script doing
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-OSI_model](./0-OSI_model) — Task/resource: OSI model.
+- [1-types_of_network](./1-types_of_network) — Task/resource: Types of network.
+- [2-MAC_and_IP_address](./2-MAC_and_IP_address) — Task/resource: MAC and IP address.
+- [3-UDP_and_TCP](./3-UDP_and_TCP) — Task/resource: UDP and TCP.
+- [4-TCP_and_UDP_ports](./4-TCP_and_UDP_ports) — Task/resource: TCP and UDP ports.
+- [5-is_the_host_on_the_network](./5-is_the_host_on_the_network) — Task/resource: Is the host on the network.

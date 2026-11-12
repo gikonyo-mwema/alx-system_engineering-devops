@@ -143,3 +143,9 @@ Your Bash scripts must run without error
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 
 The second line of all your Bash scripts should be a comment explaining what is the script doing
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-give_me_a_page](./0-give_me_a_page) — Task/resource: Give me a page.

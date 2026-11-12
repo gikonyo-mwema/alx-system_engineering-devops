@@ -30,3 +30,10 @@ Your Bash script must pass Shellcheck (version 0.7.0 via apt-get) without any er
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 The second line of all your Bash scripts should be a comment explaining what is the script doing
 
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-change_your_home_IP](./0-change_your_home_IP) — Task/resource: Change your home IP.
+- [1-show_attached_IPs](./1-show_attached_IPs) — Task/resource: Show attached IPs.
+- [100-port_listening_on_localhost](./100-port_listening_on_localhost) — Task/resource: Port listening on localhost.

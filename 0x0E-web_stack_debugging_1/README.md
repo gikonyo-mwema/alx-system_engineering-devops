@@ -32,3 +32,11 @@ The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 The second line of all your Bash scripts should be a comment explaining what is the script doing
 
 You are not allowed to use wget
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-nginx_likes_port_80](./0-nginx_likes_port_80) — Task/resource: Nginx likes port 80.
+- [1](./1) — Task/resource: Task 1.
+- [1-debugging_made_short](./1-debugging_made_short) — Task/resource: Debugging made short.

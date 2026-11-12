@@ -66,3 +66,12 @@ Keep in mind that you will have 30 minutes to perform the exercise, you will get
 Similarly in a job interview, you should answer what the interviewer asked for, be careful about being too verbose - always ask the interviewer if going into details is necessary - speaking too much can play against you
 
 In this project, again, avoid going in details if not asked
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-simple_web_stack](./0-simple_web_stack) — Task/resource: Simple web stack.
+- [1-distributed_web_infrastructure](./1-distributed_web_infrastructure) — Task/resource: Distributed web infrastructure.
+- [2-secured_and_monitored_web_infrastructure](./2-secured_and_monitored_web_infrastructure) — Task/resource: Secured and monitored web infrastructure.
+- [3-scale_up](./3-scale_up) — Task/resource: Scale up.

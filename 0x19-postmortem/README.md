@@ -33,3 +33,9 @@ The root cause of the issues was corruption of the linux virtual machine files b
 The solution was to run antivirus software and update windows. Then the vm causing the issues was discarded. A new version V22 was installed and set up.
 ## Corrective and preventative 
 A backup copy of the public and private keys used to connect to the web servers has been created. Also configuration files have been backed up for faster future recovery.
+
+## Tasks and resources
+
+This README is the project deliverable: it documents the incident summary,
+timeline, root cause, resolution, and preventive actions. There are no separate
+tracked task files in this folder.

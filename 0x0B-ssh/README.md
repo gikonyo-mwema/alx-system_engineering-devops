@@ -36,3 +36,13 @@ A README.md file, at the root of the folder of the project, is mandatory
 All your Bash script files must be executable
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 The second line of all your Bash scripts should be a comment explaining what is the script doing
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-use_a_private_key](./0-use_a_private_key) — Task/resource: Use a private key.
+- [1-create_ssh_key_pair](./1-create_ssh_key_pair) — Task/resource: Create ssh key pair.
+- [2-ssh_config](./2-ssh_config) — Task/resource: Ssh config.
+- [school](./school) — Task/resource: School.
+- [school.pub](./school.pub) — Task/resource: School.pub.

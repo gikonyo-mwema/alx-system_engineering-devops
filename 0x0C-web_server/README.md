@@ -73,3 +73,14 @@ The second line of all your Bash scripts should be a comment explaining what is 
 
 You can’t use systemctl for restarting a process
 
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-transfer_file](./0-transfer_file) — Task/resource: Transfer file.
+- [1-install_nginx_web_server](./1-install_nginx_web_server) — Task/resource: Install nginx web server.
+- [2-setup_a_domain_name](./2-setup_a_domain_name) — Task/resource: Setup a domain name.
+- [3-redirection](./3-redirection) — Task/resource: Redirection.
+- [4-not_found_page_404](./4-not_found_page_404) — Task/resource: Not found page 404.
+- [7-puppet_install_nginx_web_server.pp](./7-puppet_install_nginx_web_server.pp) — Puppet manifest: Puppet install nginx web server.
+- [web-01](./web-01) — Supporting host or infrastructure file (Web 01).

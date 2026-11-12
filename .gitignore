@@ -1,0 +1,12 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Editor temporary and swap files
+*.swp
+*.swo
+*~
+
+# Node.js dependencies and generated output
+node_modules/
+npm-debug.log*

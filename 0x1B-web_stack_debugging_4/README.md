@@ -32,4 +32,9 @@ Your Puppet manifests files must end with the extension .pp
 
 Files will be checked with Puppet v3.4
 
+## Tasks and resources
 
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-the_sky_is_the_limit_not.pp](./0-the_sky_is_the_limit_not.pp) — Puppet manifest: The sky is the limit not.
+- [1-user_limit.pp](./1-user_limit.pp) — Puppet manifest: User limit.

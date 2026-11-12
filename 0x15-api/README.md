@@ -71,3 +71,14 @@ You must
 use get to access to dictionary value by key (it won’t throw an exception if the key doesn’t exist in the dictionary)
 
 Your code should not be executed when imported (by using if __name__ == "__main__":)
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-gather_data_from_an_API.py](./0-gather_data_from_an_API.py) — Source file for Gather data from an API.
+- [1](./1) — Task/resource: Task 1.
+- [1-export_to_CSV.py](./1-export_to_CSV.py) — Source file for Export to CSV.
+- [2-export_to_JSON.py](./2-export_to_JSON.py) — Source file for Export to JSON.
+- [2.csv](./2.csv) — CSV data/output file for the API export tasks.
+- [3-dictionary_of_list_of_dictionaries.py](./3-dictionary_of_list_of_dictionaries.py) — Source file for Dictionary of list of dictionaries.

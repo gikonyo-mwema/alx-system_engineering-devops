@@ -27,3 +27,11 @@ Your Bash scripts must run without error
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 
 The second line of all your Bash scripts should be a comment explaining what is the script doing
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-iamsomeoneelse](./0-iamsomeoneelse) — Task/resource: Iamsomeoneelse.
+- [1-run_nginx_as_nginx](./1-run_nginx_as_nginx) — Task/resource: Run nginx as nginx.
+- [100-fix_in_7_lines_or_less](./100-fix_in_7_lines_or_less) — Task/resource: Fix in 7 lines or less.

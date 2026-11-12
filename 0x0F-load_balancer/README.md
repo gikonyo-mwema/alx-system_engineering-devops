@@ -50,3 +50,15 @@ Your Bash script must pass Shellcheck (version 0.3.7) without any error
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 
 The second line of all your Bash scripts should be a comment explaining what is the script doing
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-custom_http_response_header](./0-custom_http_response_header) — Task/resource: Custom http response header.
+- [1](./1) — Task/resource: Task 1.
+- [1-install_load_balancer](./1-install_load_balancer) — Task/resource: Install load balancer.
+- [2-puppet_custom_http_response_header.pp](./2-puppet_custom_http_response_header.pp) — Puppet manifest: Puppet custom http response header.
+- [ld_01](./ld_01) — Supporting host or infrastructure file (Ld 01).
+- [web_01](./web_01) — Supporting host or infrastructure file (Web 01).
+- [web_02](./web_02) — Supporting host or infrastructure file (Web 02).

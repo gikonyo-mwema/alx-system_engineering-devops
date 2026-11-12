@@ -1,20 +1,45 @@
-# Learning DevOps
+# ALX System Engineering & DevOps
 
-## Introduction
+This repository collects hands-on ALX projects covering Linux, shell scripting,
+networking, web infrastructure, configuration management, APIs, and operations.
+Project folders are ordered roughly along the learning path. Each project
+README links to all of the task files and supporting resources in that folder.
 
-This repository is dedicated to learning and understanding DevOps principles and best practices. DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
+## Project index
 
-## Learning Objectives
+| Project | What you will find | Project README and task examples |
+|---|---|---|
+| [0x00-shell_basics/](./0x00-shell_basics/) | Navigating the filesystem, listing files, paths, file types, and links. | [README](./0x00-shell_basics/README.md) · [working directory](./0x00-shell_basics/0-current_working_directory) · [symbolic link](./0x00-shell_basics/13-symbolic_link) |
+| [0x01-shell_permissions/](./0x01-shell_permissions/) | Users, groups, ownership, and Linux permission modes. | [README](./0x01-shell_permissions/README.md) · [change permissions](./0x01-shell_permissions/6-multiple_permissions) · [change owner and group](./0x01-shell_permissions/100-change_owner_and_group) |
+| [0x02-shell_redirections/](./0x02-shell_redirections/) | Shell output/input redirection, pipelines, filters, and text processing. | [README](./0x02-shell_redirections/README.md) · [hello world](./0x02-shell_redirections/0-hello_world) · [acrostic filter](./0x02-shell_redirections/102-acrostic) |
+| [0x03-shell_variables_expansions/](./0x03-shell_variables_expansions/) | Aliases, environment and local variables, arithmetic, and shell expansion. | [README](./0x03-shell_variables_expansions/README.md) · [variables](./0x03-shell_variables_expansions/4-global_variables) · [binary to decimal](./0x03-shell_variables_expansions/11-binary_to_decimal) |
+| [0x04-loops_conditions_and_parsing/](./0x04-loops_conditions_and_parsing/) | Bash loops, conditionals, input parsing, and small scripts. | [README](./0x04-loops_conditions_and_parsing/README.md) · [FizzBuzz](./0x04-loops_conditions_and_parsing/10-fizzbuzz) · [parse Apache logs](./0x04-loops_conditions_and_parsing/102-lets_parse_apache_logs) |
+| [0x05-processes_and_signals/](./0x05-processes_and_signals/) | Process inspection, PIDs, signals, and process control. | [README](./0x05-processes_and_signals/README.md) · [list processes](./0x05-processes_and_signals/1-list_your_processes) · [process and PID file](./0x05-processes_and_signals/100-process_and_pid_file) |
+| [0x06-regular_expressions/](./0x06-regular_expressions/) | Ruby/Oniguruma regular expressions for matching and extracting text. | [README](./0x06-regular_expressions/README.md) · [phone number](./0x06-regular_expressions/6-phone_number.rb) · [TextMe parsing](./0x06-regular_expressions/100-textme.rb) |
+| [0x07-networking_basics/](./0x07-networking_basics/) | OSI layers, network types, IP/MAC addresses, TCP/UDP, and ports. | [README](./0x07-networking_basics/README.md) · [OSI model](./0x07-networking_basics/0-OSI_model) · [TCP and UDP](./0x07-networking_basics/3-UDP_and_TCP) |
+| [0x08-networking_basics_2/](./0x08-networking_basics_2/) | Localhost, hosts files, network interfaces, and listening ports. | [README](./0x08-networking_basics_2/README.md) · [local IP configuration](./0x08-networking_basics_2/0-change_your_home_IP) · [listening port](./0x08-networking_basics_2/100-port_listening_on_localhost) |
+| [0x09-web_infrastructure_design/](./0x09-web_infrastructure_design/) | Diagrams and explanations for simple, distributed, secure, and scalable web stacks. | [README](./0x09-web_infrastructure_design/README.md) · [simple web stack](./0x09-web_infrastructure_design/0-simple_web_stack) · [scale up](./0x09-web_infrastructure_design/3-scale_up) |
+| [0x0A-configuration_management/](./0x0A-configuration_management/) | Puppet manifests for managing files, packages, and commands. | [README](./0x0A-configuration_management/README.md) · [create a file](./0x0A-configuration_management/0-create_a_file.pp) · [install a package](./0x0A-configuration_management/1-install_a_package.pp) |
+| [0x0B-ssh/](./0x0B-ssh/) | SSH keys, private-key login, and client configuration. | [README](./0x0B-ssh/README.md) · [use a private key](./0x0B-ssh/0-use_a_private_key) · [SSH config](./0x0B-ssh/2-ssh_config) |
+| [0x0C-web_server/](./0x0C-web_server/) | File transfer, Nginx setup, domains, redirects, custom 404 pages, and Puppet. | [README](./0x0C-web_server/README.md) · [install Nginx](./0x0C-web_server/1-install_nginx_web_server) · [redirect](./0x0C-web_server/3-redirection) |
+| [0x0D-web_stack_debugging_0/](./0x0D-web_stack_debugging_0/) | Basic web-stack debugging and getting a server response. | [README](./0x0D-web_stack_debugging_0/README.md) · [serve a page](./0x0D-web_stack_debugging_0/0-give_me_a_page) |
+| [0x0E-web_stack_debugging_1/](./0x0E-web_stack_debugging_1/) | Debugging Nginx configuration and service behavior. | [README](./0x0E-web_stack_debugging_1/README.md) · [Nginx on port 80](./0x0E-web_stack_debugging_1/0-nginx_likes_port_80) |
+| [0x0F-load_balancer/](./0x0F-load_balancer/) | Load balancer setup and custom HTTP response headers. | [README](./0x0F-load_balancer/README.md) · [install load balancer](./0x0F-load_balancer/1-install_load_balancer) · [custom header](./0x0F-load_balancer/0-custom_http_response_header) |
+| [0x10-https_ssl/](./0x10-https_ssl/) | DNS, HTTPS/SSL termination, and HTTP-to-HTTPS redirects. | [README](./0x10-https_ssl/README.md) · [world wide web](./0x10-https_ssl/0-world_wide_web) · [SSL termination](./0x10-https_ssl/1-haproxy_ssl_termination) |
+| [0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/) | A browser request lifecycle, technical writing, and diagram/contribution work. | [README](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/README.md) · [blog post](./0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/0-blog_post) |
+| [0x12-web_stack_debugging_2/](./0x12-web_stack_debugging_2/) | Linux user context and running Nginx under the intended account. | [README](./0x12-web_stack_debugging_2/README.md) · [run as another user](./0x12-web_stack_debugging_2/0-iamsomeoneelse) · [run Nginx as nginx](./0x12-web_stack_debugging_2/1-run_nginx_as_nginx) |
+| [0x13-firewall/](./0x13-firewall/) | Firewall rules and port forwarding. | [README](./0x13-firewall/README.md) · [firewall rules](./0x13-firewall/0-block_all_incoming_traffic_but) · [port forwarding](./0x13-firewall/100-port_forwarding) |
+| [0x14-mysql/](./0x14-mysql/) | MySQL primary/replica configuration and database backups. | [README](./0x14-mysql/README.md) · [primary configuration](./0x14-mysql/4-mysql_configuration_primary) · [backup](./0x14-mysql/5-mysql_backup) |
+| [0x15-api/](./0x15-api/) | Fetching data from an API and exporting it to CSV/JSON formats. | [README](./0x15-api/README.md) · [gather API data](./0x15-api/0-gather_data_from_an_API.py) · [export to JSON](./0x15-api/2-export_to_JSON.py) |
+| [0x16-api_advanced/](./0x16-api_advanced/) | API pagination, recursive queries, and counting results. | [README](./0x16-api_advanced/README.md) · [top ten results](./0x16-api_advanced/1-top_ten.py) · [recursive query](./0x16-api_advanced/2-recurse.py) |
+| [0x17-web_stack_debugging_3/](./0x17-web_stack_debugging_3/) | Tracing and diagnosing an application/server issue with `strace`. | [README](./0x17-web_stack_debugging_3/README.md) · [strace task](./0x17-web_stack_debugging_3/0-strace_is_your_friend.pp) |
+| [0x18-webstack_monitoring/](./0x18-webstack_monitoring/) | Monitoring and observability exercises. | [README](./0x18-webstack_monitoring/README.md) |
+| [0x19-postmortem/](./0x19-postmortem/) | Incident analysis, timelines, root causes, and corrective actions. | [README and postmortem](./0x19-postmortem/README.md) |
+| [0x1A-application_server/](./0x1A-application_server/) | Gunicorn application-server deployment behind Nginx. | [README](./0x1A-application_server/README.md) · [Nginx app-server config](./0x1A-application_server/2-app_server-nginx_config) · [Gunicorn service](./0x1A-application_server/gunicorn.service) |
+| [0x1B-web_stack_debugging_4/](./0x1B-web_stack_debugging_4/) | Diagnosing and improving web-server performance and process limits. | [README](./0x1B-web_stack_debugging_4/README.md) · [system tuning](./0x1B-web_stack_debugging_4/0-the_sky_is_the_limit_not.pp) |
+| [attack_is_the_best_defense/](./attack_is_the_best_defense/) | Defensive security exercises on traffic inspection and authentication. | [README](./attack_is_the_best_defense/README.md) · [traffic sniffing](./attack_is_the_best_defense/0-sniffing) · [dictionary attack](./attack_is_the_best_defense/1-dictionary_attack) |
+| [command_line_for_the_win/](./command_line_for_the_win/) | Command-line challenge completion screenshots. | [README](./command_line_for_the_win/README.md) · [first nine tasks](./command_line_for_the_win/0-first_9_tasks.png) · [next nine tasks](./command_line_for_the_win/1-next_9_tasks.png) |
 
-1. **Understand the DevOps Culture**: Learn about the culture and mindset of DevOps that promotes better collaboration and communication between the development and operations teams.
+## Standalone task
 
-2. **Learn DevOps Tools and Technologies**: Get hands-on experience with tools like Docker, Jenkins, Kubernetes, Ansible, Terraform, and others that are widely used in DevOps workflows.
-
-3. **Continuous Integration and Continuous Deployment (CI/CD)**: Understand the principles of CI/CD and how to implement it using various tools.
-
-4. **Infrastructure as Code (IaC)**: Learn about managing and provisioning computing infrastructure through machine-readable definition files.
-
-5. **Monitoring and Logging**: Learn how to monitor the infrastructure, collect logs, and use this data for better decision-making.
-
-6. **Security in DevOps (DevSecOps)**: Understand the importance of security in DevOps and how to implement security practices into the DevOps workflow.
-
+- [`0-what-is-my-pid`](./0-what-is-my-pid) — print the PID of the current shell.

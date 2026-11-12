@@ -27,5 +27,7 @@ What are access logs for a web server (such as Nginx)
 
 What are error logs for a web server (such as Nginx)
 
+## Tasks and resources
 
-
+This project folder currently contains no separate tracked task files; this
+README records its monitoring concepts and learning objectives.

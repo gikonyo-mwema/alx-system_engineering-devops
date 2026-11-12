@@ -28,3 +28,11 @@ Puppet 5 Docs
 
 Install puppet-lint
 $ gem install puppet-lint
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-create_a_file.pp](./0-create_a_file.pp) — Puppet manifest: Create a file.
+- [1-install_a_package.pp](./1-install_a_package.pp) — Puppet manifest: Install a package.
+- [2-execute_a_command.pp](./2-execute_a_command.pp) — Puppet manifest: Execute a command.

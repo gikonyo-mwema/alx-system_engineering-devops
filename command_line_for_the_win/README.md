@@ -8,3 +8,11 @@ Steps followed to use SFTP command-line tool
 
 
 Each png files shows completion of nine tasks.
+
+## Tasks and resources
+
+The links below cover every tracked task file and supporting resource in this project folder.
+
+- [0-first_9_tasks.png](./0-first_9_tasks.png) — Screenshot of the first 9 tasks challenge.
+- [1-next_9_tasks.png](./1-next_9_tasks.png) — Screenshot of the next 9 tasks challenge.
+- [2-next_9_tasks.png](./2-next_9_tasks.png) — Screenshot of the next 9 tasks challenge.
